@@ -6,9 +6,10 @@ import Gallery from '../views/Gallery';
 import Shop from '../views/Shop';
 import Form from '../views/Form';
 import NotFound from '../views/NotFound';
+import './Content.css';
 
 const Content = () => (
-    <main className='Content'>
+    <main className='content'>
        <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/about' element={<About />}/>

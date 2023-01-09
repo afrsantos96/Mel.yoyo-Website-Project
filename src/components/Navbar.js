@@ -7,32 +7,34 @@ const Navbar = () => (
         <nav className='navbar navbar-expand-lg bg-body-tertiary'>
             <div className="container-fluid">
                 <Link to={"/"} className="navbar-brand d-lg-none mx-auto">
-                    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""></img>
+                    <img src='./media/images/logo_banner.png' className='navbar-brand-logo'width="300" alt=""></img>
                 </Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
                 
                 <div className='collapse navbar-collapse ' id='navbarSupportedContent'>
-                    <ul className='navbar-nav me-auto mb-2 mb-lg-0 mx-auto'>
-                        <li>
-                            <Link to={"/"} className="navbar-brand d-none d-lg-block">
-                            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt=""></img>
-                            </Link>
+                    <ul className='navbar-nav mb-2 mb-lg-0'>
+                        <li className='nav-item'>
+                            <Link className='nav-link' to={"/"}>home</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to={"/about"}>About</Link>
+                            <Link className='nav-link' to={"/about"}>about me</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to={"/gallery"}>Gallery</Link>
+                            <Link className='nav-link' to={"/gallery"}>gallery</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to={"/shop"}>Available</Link>
+                            <Link className='nav-link' to={"/shop"}>flashes</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to={"/custom"}>Custom Tattoo</Link>
+                            <Link className='nav-link' to={"/custom"}>custom tattoo</Link>
                         </li>
                     </ul>
+                    <Link to={"/"} className="navbar-brand d-none d-lg-block mx-auto nav-banner">
+                        <img src="./media/images/logo_banner.png" width='250'  alt=""></img>
+                    </Link>
+                    
                 </div>
             </div>
         </nav>
