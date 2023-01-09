@@ -12,6 +12,9 @@
 
 .home-img-container{
     display: flex;
+    align-self: flex-end;
+    width: 300px;
+    height: auto;
 }
 .home-img{
     width: 300px;
@@ -19,9 +22,12 @@
     border-radius: 30em;
 }
 .home-text{
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .home-img2{
+    display: flex;
     align-self: flex-end;
     width: 300px;
     height: auto;

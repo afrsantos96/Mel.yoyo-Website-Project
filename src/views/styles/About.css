@@ -1,0 +1,12 @@
+.about-row{
+    justify-content: space-around;
+}
+
+.about-mel-img{
+    border-radius: 20em;
+    max-width: 100%;
+    height: auto;
+}
+.about-mel-txt{
+    align-self: center;
+}

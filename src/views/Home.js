@@ -7,10 +7,10 @@ const Home = () => (
         {/* home-img-container */}
             <img src='./media//images/home/homeGifhd.gif' className="home-img" alt="..."></img>
         </div>
-        <div className='col-6 col-lg-4 '>{/* home-text */}
+        <div className='col-6 col-lg-4 home-text'>{/* home-text */}
         <p>tattoo</p><p>therapy</p><p>& chocolate</p>
         </div>
-        <div className='col-12 col-lg-4'>{/* home-img-container */}
+        <div className='col-12 col-lg-4 home-img-container'>{/* home-img-container */}
             <img src='./media/images/home/home2.png' className="home-img2" alt="..."></img>
         </div>
    </section>
