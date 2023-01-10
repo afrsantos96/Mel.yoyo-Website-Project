@@ -1,0 +1,53 @@
+[
+    {
+        "id":1,
+        "title": "Lascou",
+        "img": "./data-images/tatto_1"
+
+    },
+    {
+        "id":2,
+        "title": "Irado",
+        "img": "./data-images/tatto_3"
+    },
+    {
+        "id":3,
+        "title": "Floreado",
+        "img": "./data-images/tatto_4"
+    },
+    {
+        "id":4,
+        "title": "Semeado",
+        "img": "./data-images/tatto_5"
+    },
+    {
+        "id":5,
+        "title": "Ofuscante",
+        "img": "./data-images/tatto_6"
+    },
+    {
+        "id":6,
+        "title": "Ankh",
+        "img": "./data-images/tatto_7"
+    },
+    {
+        "id":7,
+        "title": "Jardim",
+        "img": "./data-images/tatto_8"
+    },
+    {
+        "id":8,
+        "title": "Beija-flor",
+        "img": "./data-images/tatto_9"
+    },
+    {
+        "id":9,
+        "title": "Apaixodana",
+        "img": "./data-images/tatto_10"
+    },
+    {
+        "id":10,
+        "title": "Gatão",
+        "img": "./data-images/tatto_10"
+    }
+]
