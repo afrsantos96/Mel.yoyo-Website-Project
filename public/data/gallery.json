@@ -2,52 +2,52 @@
     {
         "id":1,
         "title": "Lascou",
-        "img": "./data-images/tatto_1.png"
+        "url": "./../data/data-images/tattoo_1.png"
 
     },
     {
         "id":2,
         "title": "Irado",
-        "img": "./data-images/tatto_3.png"
+        "url": "./../data/data-images/tattoo_2.png"
     },
     {
         "id":3,
         "title": "Floreado",
-        "img": "./data-images/tatto_4.png"
+        "url": "./../data/data-images/tattoo_3.png"
     },
     {
         "id":4,
         "title": "Semeado",
-        "img": "./data-images/tatto_5.png"
+        "url": "./../data/data-images/tattoo_4.png"
     },
     {
         "id":5,
         "title": "Ofuscante",
-        "img": "./data-images/tatto_6.png"
+        "url": "./../data/data-images/tattoo_5.png"
     },
     {
         "id":6,
         "title": "Ankh",
-        "img": "./data-images/tatto_7.png"
+        "url": "./../data/data-images/tattoo_6.png"
     },
     {
         "id":7,
         "title": "Jardim",
-        "img": "./data-images/tatto_8.png"
+        "url": "./../data/data-images/tattoo_7.png"
     },
     {
         "id":8,
         "title": "Beija-flor",
-        "img": "./data-images/tatto_9.png"
+        "url": "./../data/data-images/tattoo_8.png"
     },
     {
         "id":9,
         "title": "Apaixodana",
-        "img": "./data-images/tatto_10.png"
+        "url": "./../data/data-images/tattoo_9.jpg"
     },
     {
         "id":10,
         "title": "Gatão",
-        "img": "./data-images/tatto_10.png"
+        "url": "./../data/data-images/tattoo_10.jpg"
     }
 ]
