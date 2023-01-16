@@ -136,13 +136,36 @@ export default function ShopContent() {
     })
                             .map((flash) => {
                                 return (
-                                    <div key={flash.id} className="gallery-img-container col-6 col-md-4">
-                                <img src={flash.url} alt="tattoo" className='gallery-img'/>
-                                <div className="overlay">
-                                <p className="gallery-img-overlay">{flash.title} - {flash.price}€</p>
+                                    
+                                    <div key={flash.id} className="gallery-img-container col-6 col-md-4" data-bs-toggle="modal" data-bs-target="#flashModal">
 
-                                </div>
-                            </div>
+                                        <img src={flash.url} alt="tattoo" className='gallery-img'/>
+                                        <div className="overlay">
+                                            <p className="gallery-img-overlay">{flash.title} - {flash.price}€</p>
+                                        </div>
+                                    
+                                    
+                                    <div className="modal fade" id="flashModal" tabindex="-1" aria-labelledby="flashModalLabel" aria-hidden="true">
+                                        <div className="modal-dialog modal-dialog-centered modal-xl">
+                                            <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h1 className="modal-title fs-5" id="flashModalLabel">{flash.title}</h1>
+                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div className="modal-body">
+                                            <img src={flash.url} alt="tattoo" className='gallery-img'/>
+                                            <p>{flash.title} / {flash.price}€</p>
+                                            </div>
+                                            
+                                            </div>
+                                        </div>
+                                        
+
+
+
+                                    </div>
+                                    </div>
+                                    
                                 );
                             })}
                         </div>
