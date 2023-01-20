@@ -1,105 +1,145 @@
 [
     {
         "id":1,
-        "title": "Lascou",
-        "price":30,
-        "size":"small",
+        "title": "Deleitoso",
+        "price":100,
+        "size":"medium",
         "tags":[
             "coraçoes"
         ],
-        "url": "./../data/data-images/tattoo_1.png"
+        "url": "./../data/data-flashes/flash_1.jpg"
 
     },
     {
         "id":2,
-        "title": "Irado",
-        "price":50,
-        "size":"small",
+        "title": "Aflorar",
+        "price":80,
+        "size":"medium",
         "tags":[
-            "animais"
+            "flores"
         ],
-        "url": "./../data/data-images/tattoo_2.png"
+        "url": "./../data/data-flashes/flash_2.jpg"
     },
     {
         "id":3,
-        "title": "Floreado",
+        "title": "Labareda",
+        "price":140,
+        "size":"big",
+        "tags":[
+            "animais"
+        ],
+        "url": "./../data/data-flashes/flash_3.jpg"
+    },
+    {
+        "id":4,
+        "title": "Flutuar",
         "price":60,
         "size":"small",
         "tags":[
             "flores"
         ],
-        "url": "./../data/data-images/tattoo_3.png"
-    },
-    {
-        "id":4,
-        "title": "Semeado",
-        "price":100,
-        "size":"small",
-        "tags":[
-            "flores"
-        ],
-        "url": "./../data/data-images/tattoo_4.png"
+        "url": "./../data/data-flashes/flash_4.jpg"
     },
     {
         "id":5,
-        "title": "Ofuscante",
-        "price":160,
+        "title": "Punhal",
+        "price":140,
         "size":"medium",
         "tags":[
             "outros"
         ],
-        "url": "./../data/data-images/tattoo_5.png"
+        "url": "./../data/data-flashes/flash_5.jpg"
     },
     {
         "id":6,
-        "title": "Ankh",
-        "price":120,
-        "size":"small",
+        "title": "Terracota",
+        "price":200,
+        "size":"big",
         "tags":[
-            "outros"
+            "outros",
+            "flores"
         ],
-        "url": "./../data/data-images/tattoo_6.png"
+        "url": "./../data/data-flashes/flash_6.jpg"
     },
     {
         "id":7,
-        "title": "Jardim",
-        "price":40,
+        "title": "Filigrana",
+        "price":100,
         "size":"medium",
         "tags":[
-            "flores"
+            "coraçoes"
         ],
-        "url": "./../data/data-images/tattoo_7.png"
+        "url": "./../data/data-flashes/flash_7.jpg"
     },
     {
         "id":8,
-        "title": "Beija-flor",
+        "title": "Ornamento",
         "price":80,
         "size":"small",
         "tags":[
-            "animais",
+            "outros",
             "flores"
         ],
-        "url": "./../data/data-images/tattoo_8.png"
+        "url": "./../data/data-flashes/flash_8.jpg"
     },
     {
         "id":9,
-        "title": "Apaixodana",
-        "price":50,
-        "size":"big",
-        "tags":[
-            "animais",
-            "coraçoes"
-        ],
-        "url": "./../data/data-images/tattoo_9.jpg"
-    },
-    {
-        "id":10,
         "title": "Gatão",
-        "price":80,
+        "price":160,
         "size":"big",
         "tags":[
             "animais"
         ],
-        "url": "./../data/data-images/tattoo_10.jpg"
+        "url": "./../data/data-flashes/flash_9.jpg"
+    },
+    {
+        "id":10,
+        "title": "Semeado",
+        "price":60,
+        "size":"small",
+        "tags":[
+            "flores"
+        ],
+        "url": "./../data/data-flashes/flash_10.jpg"
+    },
+    {
+        "id":11,
+        "title": "Radiancia",
+        "price":80,
+        "size":"medium",
+        "tags":[
+            "outros"
+        ],
+        "url": "./../data/data-flashes/flash_11.jpg"
+    },
+    {
+        "id":12,
+        "title": "Namorico",
+        "price":80,
+        "size":"small",
+        "tags":[
+            "coraçoes"
+        ],
+        "url": "./../data/data-flashes/flash_12.jpg"
+    },
+    {
+        "id":13,
+        "title": "Estouro",
+        "price":80,
+        "size":"small",
+        "tags":[
+            "outros"
+        ],
+        "url": "./../data/data-flashes/flash_13.jpg"
+    },
+    {
+        "id":14,
+        "title": "Floreira",
+        "price":100,
+        "size":"medium",
+        "tags":[
+            "flores"
+        ],
+        "url": "./../data/data-flashes/flash_14.jpg"
     }
 ]

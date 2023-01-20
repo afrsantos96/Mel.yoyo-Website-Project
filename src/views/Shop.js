@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 import './styles/Shop.css'
 
-
-export default function ShopContent() {
+export default function ShopContent(props) {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -12,8 +12,12 @@ export default function ShopContent() {
     const [filters, setFilters] = useState({});
     const [selectedTags, setSelectedTags] = useState([]);
     const [selectedSizes, setSelectedSizes] = useState([]);
+    const [minPrice, setminPrice] = useState([]);
+    const [maxPrice, setmaxPrice] = useState([]);
+    const [price, setPrice] = useState([]);
     
     
+
 
     const priceRangeInput = (e) => {
     setPrice(e.target.value);
@@ -39,8 +43,6 @@ export default function ShopContent() {
     setSelectedSizes(newSizes);
 };
 
-
-
     useEffect(() => {
         fetch("./data/flashes.json")
             .then(res => res.json())
@@ -49,6 +51,11 @@ export default function ShopContent() {
                     setIsLoaded(true);
                     setFlashes(data);
                     setFlashesOri(data);
+                    setminPrice (Math.min(...(data.map(data => data.price))));
+                    setmaxPrice (Math.max(...(data.map(data => data.price))));
+                    setPrice (Math.max(...(data.map(data => data.price))));
+                    console.log(maxPrice);
+                    
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -57,28 +64,14 @@ export default function ShopContent() {
             )
       }, []);
 
-
-     
-    const allPrices = flashes.map(flash => flash.price);
-    const minPrice = Math.min(...allPrices);
-    const maxPrice = Math.max(...allPrices);
-    /* console.log(allPrices);
-    console.log(minPrice);
-    console.log(maxPrice); */
-
     const allTags = [...new Set(flashes.map(flash => flash.tags[0]))];
-    /* console.log(allTags); */
 
     const allSizes = [...new Set(flashes.map(flash => flash.size))]
-      console.log(allSizes);
-      console.log(selectedTags);
-    const [price, setPrice] = useState(200);
-
 
       if (error) {
-        return <tr><td>Error: {error.message}</td></tr>;
+        return <p>Error: {error.message}</p>;
     } else if (!isLoaded) {
-        return <tr><td>Loading...</td></tr>;
+        return <p>Loading...</p>;
     } else {
         
         return (
@@ -90,6 +83,7 @@ export default function ShopContent() {
                             <label htmlFor="pricefilter" className='form-label'>PriceFilter</label>
                             <input type="range" className='form-range' id="pricefilter" name="pricefilter" min={minPrice} max={maxPrice} step="5" value={price} onInput={priceRangeInput} />
                             <p>{price}</p>
+
                         </div>
                             {/* Tag Inputs */}
                         <div className="tags-filter">
@@ -136,36 +130,15 @@ export default function ShopContent() {
     })
                             .map((flash) => {
                                 return (
-                                    
-                                    <div key={flash.id} className="gallery-img-container col-6 col-md-4" data-bs-toggle="modal" data-bs-target="#flashModal">
-
-                                        <img src={flash.url} alt="tattoo" className='gallery-img'/>
-                                        <div className="overlay">
-                                            <p className="gallery-img-overlay">{flash.title} - {flash.price}€</p>
-                                        </div>
-                                    
-                                    
-                                    <div className="modal fade" id="flashModal" tabindex="-1" aria-labelledby="flashModalLabel" aria-hidden="true">
-                                        <div className="modal-dialog modal-dialog-centered modal-xl">
-                                            <div className="modal-content">
-                                            <div className="modal-header">
-                                                <h1 className="modal-title fs-5" id="flashModalLabel">{flash.title}</h1>
-                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div className="modal-body">
+                                    <div key={flash.id} className="gallery-img-container col-6 col-md-4">{/**data-bs-toggle="modal" data-bs-target="#flashModal" */}
+                                        {/**Tattoo Gallery with Link to each Flash */}
+                                        <Link className='nav-link' to={`/shop/${flash.id}`}>
                                             <img src={flash.url} alt="tattoo" className='gallery-img'/>
-                                            <p>{flash.title} / {flash.price}€</p>
+                                            <div className="overlay">
+                                                <p className="gallery-img-overlay">{flash.title} - {flash.price}€</p>
                                             </div>
-                                            
-                                            </div>
-                                        </div>
-                                        
-
-
-
+                                        </Link>
                                     </div>
-                                    </div>
-                                    
                                 );
                             })}
                         </div>

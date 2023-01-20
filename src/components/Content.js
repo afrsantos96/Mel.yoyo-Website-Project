@@ -4,6 +4,7 @@ import Home from '../views/Home';
 import About from '../views/About';
 import Gallery from '../views/Gallery';
 import Shop from '../views/Shop';
+import Flash from '../views/Flash';
 import Form from '../views/Form';
 import NotFound from '../views/NotFound';
 import './Content.css';
@@ -15,7 +16,7 @@ const Content = () => (
             <Route path='/about' element={<About />}/>
             <Route path='/gallery' element={<Gallery />}/>
             <Route path='/shop' element={<Shop />}/>
-            <Route path='/shop/:title' element={<Shop />}/>
+            <Route path='/shop/:flash' element={<Flash />}/>
             <Route path='/custom' element={<Form />}/>
             <Route path='*' element={<NotFound />}/>
        </Routes>

@@ -1,7 +1,7 @@
 import React,{useEffect, useState}  from 'react';
 import './styles/Gallery.css'
 
-const GalleryContent = props => {
+const GalleryContent = () => {
  
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
