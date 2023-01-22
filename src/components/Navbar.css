@@ -1,6 +1,8 @@
 .nav-item, .nav-brand{
     padding-right: 1.25em;
     padding-left: 1.25em;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .nav-banner{
