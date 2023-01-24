@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../views/Home';
-import About from '../views/About';
+/* import About from '../views/About'; */
 import Gallery from '../views/Gallery';
 import Shop from '../views/Shop';
 import Flash from '../views/Flash';
@@ -13,7 +13,7 @@ const Content = () => (
     <main className='content'>
        <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/about' element={<About />}/>
+            {/* <Route path='/about' element={<About />}/> */}
             <Route path='/gallery' element={<Gallery />}/>
             <Route path='/shop' element={<Shop />}/>
             <Route path='/shop/:flash' element={<Flash />}/>

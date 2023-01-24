@@ -1,0 +1,11 @@
+*{
+    --color-palette1:#f5f5f5;
+    --color-palette2:#ebe7e4;
+    --color-palette3:#d1cec9;
+    --color-palette4:#b39f86;
+
+
+    --font-primary:'Montserrat', sans-serif;
+    --font-secondary:'Playfair Display', serif;
+    --maxviewdesktop:1200px;
+}
