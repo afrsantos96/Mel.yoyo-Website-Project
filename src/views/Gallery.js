@@ -51,7 +51,7 @@ const GalleryContent = () => {
 }
 
 const Gallery = () => (
-        <div className='gallery row'>
+        <div className='gallery row' id='Gallery'>
             <GalleryContent/>
         </div>
 

@@ -1,26 +1,40 @@
 @import url(./variables.css);
 
 .about{
-    background-color: var(--color-palette2);
-    background:linear-gradient(transparent 5%,var(--color-palette2) 5%);
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: var(--maxviewdesktop);
+    margin: auto;
 }
-
+.about__img_container{
+    grid-area: 1 / 1 / 2 / 4;
+}
+.about__mel_txt-container{
+    grid-area: 1 / 5 / 2 / 7;
+}
+.about__heart{
+    grid-area: 2 / 4 / 2 / 6;
+    width: 200px;
+}
 
 .about__mel, .about__studio{
-    justify-content: space-around;
-    padding-top: 2em;
+    margin: auto;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    max-width: var(--maxviewdesktop);
+
 }
 
-.about-mel-img{
-    border-radius: 20em;
-    width: 100%;
-    height: auto;
-    margin: auto;
+.about__img{
+
 }
 .about__mel_txt-container, .about__studio_txt-container{
     align-self: center;
-    font-family: var(--font-primary);
-    
+    font-weight: 400;
 }
 
 .about__title{
@@ -30,13 +44,24 @@
 
 .about__studio_txt{
     color: var(--color-primary2);
+    padding-top: 2;
 }
-/* .heart-absolute{
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    width: 100px;
-} */
+
+
+
+@media (max-width: 992px){
+
+    .about__mel, .about__studio{
+   
+    }
+    .about__mel_txt-container{
+        padding-top: 2rem;
+    }
+    .about__title{
+        text-align: center;
+    }
+}
+
 @media (max-width: 767px){
 
     .about-mel-img{
