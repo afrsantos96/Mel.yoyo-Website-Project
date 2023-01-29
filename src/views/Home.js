@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import About from './About';
 import Gallery from './Gallery';
 import './styles/Home.css'
@@ -14,7 +13,7 @@ const Home = () => (
                 </div>
                 <div className='homepage__txt'>{/* home-text */}
                 <p>TATTOO</p><p>THERAPY</p><p>& CHOCOLATE</p>
-                <p className='homepage__text_quote'>Find yours <Link className='about__link' to={"/shop"}>here.</Link></p>
+                <p className='homepage__text_quote'>Find my work <a className='home__link' href="#Gallery">here.</a></p>
                 </div>
             </div>
         </section>

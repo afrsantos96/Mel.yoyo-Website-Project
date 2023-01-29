@@ -54,7 +54,7 @@ export default function ShopContent(props) {
                     setminPrice (Math.min(...(data.map(data => data.price))));
                     setmaxPrice (Math.max(...(data.map(data => data.price))));
                     setPrice (Math.max(...(data.map(data => data.price))));
-                    console.log(maxPrice);
+                    
                     
                 },
                 (error) => {
@@ -75,53 +75,63 @@ export default function ShopContent(props) {
     } else {
         
         return (
-            <>
-                <div className="row">
-                    <div className="shop-filter col-2"> 
+            <><div className="shop__header">
+                <div className="shop__header__container">
+                    <p className="shop__title">FLASH GALLERY</p>
+                    <p className="shop__subtitle">Made with love</p>
+                </div>
+            </div>
+                <div className="row shop">
+                <button class="filter__button btn " type="button" data-bs-toggle="collapse" data-bs-target="#filters" aria-expanded="false" aria-controls="collapseWidthExample">
+                        Filters
+                        </button>
+                    <div className="shop__filter col-12 col-lg-2 collapse" id="filters"> 
+                        
                         {/* Price Range Input */}     
-                        <div className="price-range">
-                            <label htmlFor="pricefilter" className='form-label'>PriceFilter</label>
+                        <div className="price__filter">
+                            <label htmlFor="pricefilter" className='filter__title'>PriceFilter</label>
                             <input type="range" className='form-range' id="pricefilter" name="pricefilter" min={minPrice} max={maxPrice} step="5" value={price} onInput={priceRangeInput} />
-                            <p>{price}</p>
+                            <div className="price__filter__status"><p>Max price:</p><p>{price} €</p></div>
 
                         </div>
                             {/* Tag Inputs */}
-                        <div className="tags-filter">
-                            <p>Tags Filter</p>
+                        <div className="tags__filter">
+                            <p className="filter__title">Tags Filter</p>
                             {allTags.map((tag) => (
-                                <label key={tag}>
+                                <label key={tag} className="checkbox__container">
                                     <input
                                         type="checkbox"
                                         checked={filters[tag]}
                                         onChange={tagsInput}
                                         tag={tag}
-                                        className="tags-filter-input"
-                                    />
-                                    {tag}
+                                        className="tags__filter-input"
+                                    /> {tag}
+                                    <span className="checkmark"></span>
                                 </label>
+                                
                             ))}
                         </div>
                         <br/>
                         {/* Size Inputs */}
-                        <div className="size-filter">
-                            <p>Size Filter</p>
+                        <div className="size__filter">
+                            <p className="filter__title">Size Filter</p>
                             {allSizes.map((size) => (
-                                <label key={size}>
+                                <label key={size} className="checkbox__container">
                                     <input
                                         type="checkbox"
                                         checked={filters[size]}
                                         onChange={sizeInput}
                                         tag={size}
-                                        className="size-filter-input"
-                                    />
-                                    {size}
+                                        className="size__filter-input"
+                                    /> {size}
+                                    <span className="checkmark"></span>
                                 </label>
                             ))}
                         </div>
                     
                     </div>
-                    <div className="col-12 col-lg-8">
-                        <div className='gallery row'>
+                    <div className="col-12 col-lg-10">
+                        <div className='shop__container row'>
                         {flashes
                             .filter((flash) => {
                             return  flash.price <= price && 
@@ -130,12 +140,13 @@ export default function ShopContent(props) {
     })
                             .map((flash) => {
                                 return (
-                                    <div key={flash.id} className="gallery-img-container col-6 col-md-4">{/**data-bs-toggle="modal" data-bs-target="#flashModal" */}
+                                    <div key={flash.id} className="flash__img__container col-6 col-md-4">
                                         {/**Tattoo Gallery with Link to each Flash */}
                                         <Link className='nav-link' to={`/shop/${flash.id}`}>
-                                            <img src={flash.url} alt="tattoo" className='gallery-img'/>
-                                            <div className="overlay">
-                                                <p className="gallery-img-overlay">{flash.title} - {flash.price}€</p>
+                                            <img src={flash.url} alt="tattoo" className='flash__img'/>
+                                            <div className="flash__img__overlay">
+                                                <p className="flash__img__overlay__txt__title">{flash.title}</p>
+                                                <p className="flash__img__overlay__txt__price">{flash.price}€</p>
                                             </div>
                                         </Link>
                                     </div>

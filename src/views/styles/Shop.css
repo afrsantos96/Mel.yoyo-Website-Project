@@ -1,13 +1,216 @@
-.gallery{
+.shop{
     display: flex;
-    width: 100%
+    width: 100%;
+    padding: 2rem 4rem;
+    margin: 0;
+}
+.shop__header{
+    position: relative;
+    height: 20rem;
+    background-color: var(--color-palette2);
+    
 }
 
-.gallery-img{
+.shop__header__container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem 4rem;
+
+}
+.shop__title{
+    font-family: var(--font-secondary);
+    font-size: 3rem;
+}
+.shop__subtitle{
+    color: var(--color-palette4);
+}
+
+
+
+.shop-img{
     width: 100%;
 }
-.tags-filter, .size-filter{
+.tags__filter, .size__filter{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
+.price__filter__status{
+    display: flex;
+    font-size: 0.864rem;
+    font-weight: 500;
+    justify-content: space-around;
+}
+
+.filter__title{
+    font-weight: 500;
+}
+
+.filter__button{
+    width: 100px;
+    background-color: var(--color-palette3);
+    margin: 1rem;
+}
+.filter__button:is(:hover, :active, :focus, :target){
+    background-color: var(--color-palette3);
+}
+
+
+/* FLASH IMAGE OVERLAY */
+
+.flash__img__overlay{
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--color-palette3);
+}
+
+.flash__img__container:is(:hover, :focus) .flash__img__overlay{
+    opacity: 1
+}
+
+.flash__img__overlay__txt__title{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
+}
+.flash__img__overlay__txt__price{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
+}
+.flash__img__container{
+    position: relative;
+    padding: 1rem;
+}
+
+
+/* -------------------------CHECKBOX------------------------ */
+.checkbox__container{
+    display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--color-palette2);
+    border-radius: 100%;
+}
+
+.checkbox__container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .checkbox__container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkbox__container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--color-palette4);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+
+ @media(min-width:992px) {
+    .shop__filter{
+        max-width: 150px;
+        display: block!important;
+    }
+    .filter__button{
+        display: none;
+    }
+ }
+
+  @media (max-width: 991px){
+    .shop__filter{
+        display: flex;
+        max-width:none;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .price__filter{
+        max-width: 30%;
+    }
+
+    .shop__filter{
+
+    }
+  }
+
+  @media (max-width: 767px){
+    .shop__filter{
+        font-size: 0.824rem;
+    }
+  }
+
+  @media (max-width: 576px){
+    .shop, .shop__header__container{
+        padding: 1rem 2rem;
+    }
+    .shop__title {
+        font-size: 2.24rem;
+    }
+    .tags__filter,.size__filter{
+        padding-left: 1rem;
+    }
+    .price__filter__status{
+        flex-direction: column;
+        
+    }
+    .price__filter__status > p{
+        margin: 0;
+    }
+
+    .flash__img__overlay__txt__title, .flash__img__overlay__txt__price{
+        font-size: 1.286rem
+    }
+
+  }

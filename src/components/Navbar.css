@@ -1,6 +1,7 @@
 .navbar{
     padding: 0 4rem;
     background-color: var(--color-palette2);
+    
 }
 .container-fluid{
     max-width: var(--maxviewdesktop);
@@ -39,8 +40,8 @@
     } 
 }
 @media (max-width: 576px){
-    .navbar-brand{
-
+    .navbar{
+        padding: 1rem 2rem;
     }
  .navbar-brand-logo{
     width: 180px;
