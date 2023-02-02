@@ -71,17 +71,23 @@ export default function ShopContent(props) {
       if (error) {
         return <p>Error: {error.message}</p>;
     } else if (!isLoaded) {
-        return <p>Loading...</p>;
+        return <div className="loading"><div class="loadingio-spinner-spinner-wkemfo7naoe"><div class="ldio-o0viprjlto">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div></div></div>;
     } else {
         
         return (
-            <><div className="shop__header">
+            <>
+            <section className="shop__header">
                 <div className="shop__header__container">
-                    <p className="shop__title">FLASH GALLERY</p>
-                    <p className="shop__subtitle">Made with love</p>
+                    <div className="shop__header__content">
+                        <p className="shop__title">FLASH GALLERY</p>
+                        <p className="shop__subtitle">Made with love</p>
+                    </div>
                 </div>
-            </div>
-                <div className="row shop">
+            </section>
+            <section className="shop">
+                <div className="row shop__container">
                 <button class="filter__button btn " type="button" data-bs-toggle="collapse" data-bs-target="#filters" aria-expanded="false" aria-controls="collapseWidthExample">
                         Filters
                         </button>
@@ -131,13 +137,13 @@ export default function ShopContent(props) {
                     
                     </div>
                     <div className="col-12 col-lg-10">
-                        <div className='shop__container row'>
+                        <div className='shop__gallery row'>
                         {flashes
                             .filter((flash) => {
                             return  flash.price <= price && 
                             selectedTags.every((tag) => flash.tags.includes(tag)) &&
                             selectedSizes.every((size) => flash.size.includes(size));
-    })
+                            })
                             .map((flash) => {
                                 return (
                                     <div key={flash.id} className="flash__img__container col-6 col-md-4">
@@ -154,8 +160,8 @@ export default function ShopContent(props) {
                             })}
                         </div>
                     </div>
-        
-                 </div>
+                    </div>
+            </section>
             </>
         );
     }

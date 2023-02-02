@@ -8,37 +8,37 @@
     {
         "id":2,
         "title": "Irado",
-        "url": "./../data/data-images/tattoo_2.png"
+        "url": "./../data/data-images/tattoo_2.jpg"
     },
     {
         "id":3,
         "title": "Floreado",
-        "url": "./../data/data-images/tattoo_3.png"
+        "url": "./../data/data-images/tattoo_3.jpg"
     },
     {
         "id":4,
         "title": "Semeado",
-        "url": "./../data/data-images/tattoo_4.png"
+        "url": "./../data/data-images/tattoo_4.jpg"
     },
     {
         "id":5,
         "title": "Ofuscante",
-        "url": "./../data/data-images/tattoo_5.png"
+        "url": "./../data/data-images/tattoo_5.jpg"
     },
     {
         "id":6,
         "title": "Ankh",
-        "url": "./../data/data-images/tattoo_6.png"
+        "url": "./../data/data-images/tattoo_6.jpg"
     },
     {
         "id":7,
         "title": "Jardim",
-        "url": "./../data/data-images/tattoo_7.png"
+        "url": "./../data/data-images/tattoo_7.jpg"
     },
     {
         "id":8,
         "title": "Beija-flor",
-        "url": "./../data/data-images/tattoo_8.png"
+        "url": "./../data/data-images/tattoo_8.jpg"
     },
     {
         "id":9,
@@ -49,5 +49,35 @@
         "id":10,
         "title": "Gatão",
         "url": "./../data/data-images/tattoo_10.jpg"
-    }
+    },
+    {
+        "id":11,
+        "title": "Namorico",
+        "url": "./../data/data-images/tattoo_11.jpg"
+    },
+    {
+        "id":12,
+        "title": "Madura",
+        "url": "./../data/data-images/tattoo_12.jpg"
+    },
+    {
+        "id":13,
+        "title": "Vento-levou",
+        "url": "./../data/data-images/tattoo_13.jpg"
+    },
+    {
+        "id":14,
+        "title": "Deleitoso",
+        "url": "./../data/data-images/tattoo_14.jpg"
+    },
+    {
+       "id":15,
+        "title": "Radiãncia",
+        "url": "./../data/data-images/tattoo_15.jpg"
+    },
+    {
+       "id":15,
+        "title": "Trio",
+        "url": "./../data/data-images/tattoo_16.jpg"
+    } 
 ]

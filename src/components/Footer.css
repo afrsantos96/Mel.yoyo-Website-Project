@@ -1,13 +1,18 @@
 .footer{
     padding: 1rem 4rem;
-    display: flex;
+    
     background-color: var(--color-palette4);
     height:4em;
     color: var(--color-palette1);
+    
+}
+.footer__container{
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    max-width: var(--maxviewdesktop);
 }
-
 .footer__cc{
 
 
@@ -35,15 +40,21 @@ padding-right: 1rem;
 
 @media (max-width: 800px){
     .footer{
-        flex-direction: column;
         height: 5em;
+    }
+    .footer__container{
+        flex-direction: column;
+
     }
 
 }
 @media (max-width: 576px){
     .footer{
+        padding: 0;
+    }
+    .footer__container{
         font-size: 0.846rem;
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
     .footer__socials > *{
         padding-right: 0.5rem;

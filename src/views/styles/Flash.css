@@ -1,12 +1,80 @@
 
+.flash{
+background-color: var(--color-palette2);
+padding: 2rem 4rem;
+
+}
+.flash__container{
+  margin: auto;
+
+}
+
+
+.flash-description{
+  padding-top: 2rem;
+  font-weight: 500;
+}
+
+.flash__header{
+  position: relative;
+  height: 20rem;
+  margin: auto;
+  max-width: var(--maxviewdesktop);
+  
+}
+
+.flash__header__container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+
+
+}
+
+.flash__title{
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+}
+.flash__subtitle, .flash__booking{
+  color: var(--color-palette4);
+  font-weight: 500;
+}
+
+.flash__booking, .flash__booking__link{
+    color: var(--color-palette4);
+}
+.flash__booking__link:is(:hover,:focus){
+  color: var(--color-palette3)
+}
+
+.flash__img{
+  margin: auto;
+}
+
+
+@media (max-width: 576px){
+  .flash{
+    padding:2rem 2rem;
+  }
+  .flash__title{
+    font-size: 2.648rem;
+  }
+  }
+
+/* Loading */
+
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 @keyframes ldio-o0viprjlto {
   0% { opacity: 1 }
   100% { opacity: 0 }
 }
 .ldio-o0viprjlto div {
-  left: 94px;
-  top: 48px;
-  position: absolute;
   animation: ldio-o0viprjlto linear 1s infinite;
   background: #c9785b;
   width: 12px;

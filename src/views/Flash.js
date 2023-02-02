@@ -34,29 +34,33 @@ export default function Flash() {
         return <p>Error: {error.message}</p>;
     } else if (!isLoaded) {
         
-        return <div class="loadingio-spinner-spinner-wkemfo7naoe"><div class="ldio-o0viprjlto">
+        return <div className='loading'><div class="loadingio-spinner-spinner-wkemfo7naoe"><div class="ldio-o0viprjlto loading">
         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        </div></div>
+        </div></div></div>
     } else {
-        console.log(flash);
         if (flash) {
             const data = flashes.filter( selectedFlash => selectedFlash.id === flash);
-        return (
-        <div className="row">
-            {/**Lateral Filter */}
-            <div className="shop-filter col-2">
-                <Link className='back-link' to={"/shop"}><i class="fa-solid fa-angle-left"></i> Back Button</Link>
-            </div>
-            {/**Flash container */}
-            <div className="col-12 col-lg-6">
-                    <div key={flashes[flash-1].id} className="flash-img-container">
-                    <img src={flashes[flash-1].url} alt="tattoo flash" className='flash-img'/>
-                    </div>
-            </div>
-            {/**Flash description */}
-            <div className="flash-description col-2">
-                        <p className="">{flashes[flash-1].title} - {flashes[flash-1].price}€</p>
-                    </div>
-        </div>
+        return (<>
+                <div className='flash'>
+                    <div className="flash__header">
+                        <div className="flash__header__container">
+                            <Link className='back__link nav-link' to={"/shop"}><i class="fa-solid fa-angle-left"></i> Back to Gallery</Link>
+                            <p className="flash__title">{flashes[flash-1].title}</p>
+                            <p className="flash__subtitle">{flashes[flash-1].collection}</p>
+                            <p className="flash__subtitle">Min Size: {flashes[flash-1].minsize} cm</p>
+                            <p className="flash__subtitle">Price: {flashes[flash-1].price} €</p>
+                            <p className='flash__booking'>I wanna <a href="https://docs.google.com/forms/d/e/1FAIpQLSdj8bJKJULX7g35WAZgf2IepGM0ocmYdHU0dV4REGiBm-BFag/viewform" className='flash__booking__link' target="_blank" rel="noopener noreferrer"> book it!</a></p>
+                        </div>
 
+                    </div>
+                    <div className="flash__page">
+                        <div className="flash__container">
+                            <div key={flashes[flash-1].id} className="">
+                            <img src={flashes[flash-1].url} alt="tattoo flash" className='flash__img'/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </>
 )}}};

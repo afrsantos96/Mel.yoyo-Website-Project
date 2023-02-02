@@ -7,7 +7,9 @@
         "tags":[
             "coraçoes"
         ],
-        "url": "./../data/data-flashes/flash_1.jpg"
+        "url": "./../data/data-flashes/flash_1.jpg",
+        "minsize": 6,
+        "collection": "Summer 2022"
 
     },
     {
@@ -18,7 +20,9 @@
         "tags":[
             "flores"
         ],
-        "url": "./../data/data-flashes/flash_2.jpg"
+        "url": "./../data/data-flashes/flash_2.jpg",
+        "minsize": 5,
+        "collection": "Summer 2022"
     },
     {
         "id":3,
@@ -28,7 +32,9 @@
         "tags":[
             "animais"
         ],
-        "url": "./../data/data-flashes/flash_3.jpg"
+        "url": "./../data/data-flashes/flash_3.jpg",
+        "minsize": 9,
+        "collection": "Summer 2022"
     },
     {
         "id":4,
@@ -38,7 +44,9 @@
         "tags":[
             "flores"
         ],
-        "url": "./../data/data-flashes/flash_4.jpg"
+        "url": "./../data/data-flashes/flash_4.jpg",
+        "minsize": 4,
+        "collection": "Summer 2022"
     },
     {
         "id":5,
@@ -48,7 +56,9 @@
         "tags":[
             "outros"
         ],
-        "url": "./../data/data-flashes/flash_5.jpg"
+        "url": "./../data/data-flashes/flash_5.jpg",
+        "minsize": 7,
+        "collection": "Summer 2022"
     },
     {
         "id":6,
@@ -59,7 +69,9 @@
             "outros",
             "flores"
         ],
-        "url": "./../data/data-flashes/flash_6.jpg"
+        "url": "./../data/data-flashes/flash_6.jpg",
+        "minsize": 14,
+        "collection": "Summer 2022"
     },
     {
         "id":7,
@@ -69,7 +81,9 @@
         "tags":[
             "coraçoes"
         ],
-        "url": "./../data/data-flashes/flash_7.jpg"
+        "url": "./../data/data-flashes/flash_7.jpg",
+        "minsize": 6,
+        "collection": "Summer 2022"
     },
     {
         "id":8,
@@ -80,7 +94,9 @@
             "outros",
             "flores"
         ],
-        "url": "./../data/data-flashes/flash_8.jpg"
+        "url": "./../data/data-flashes/flash_8.jpg",
+        "minsize": 3,
+        "collection": "Summer 2022"
     },
     {
         "id":9,
@@ -90,7 +106,9 @@
         "tags":[
             "animais"
         ],
-        "url": "./../data/data-flashes/flash_9.jpg"
+        "url": "./../data/data-flashes/flash_9.jpg",
+        "minsize": 8,
+        "collection": "Spring 2022"
     },
     {
         "id":10,
@@ -100,7 +118,9 @@
         "tags":[
             "flores"
         ],
-        "url": "./../data/data-flashes/flash_10.jpg"
+        "url": "./../data/data-flashes/flash_10.jpg",
+        "minsize": 4,
+        "collection": "Spring 2022"
     },
     {
         "id":11,
@@ -110,7 +130,9 @@
         "tags":[
             "outros"
         ],
-        "url": "./../data/data-flashes/flash_11.jpg"
+        "url": "./../data/data-flashes/flash_11.jpg",
+        "minsize": 7,
+        "collection": "Welcome 2022"
     },
     {
         "id":12,
@@ -120,7 +142,9 @@
         "tags":[
             "coraçoes"
         ],
-        "url": "./../data/data-flashes/flash_12.jpg"
+        "url": "./../data/data-flashes/flash_12.jpg",
+        "minsize": 5,
+        "collection": "Welcome 2022"
     },
     {
         "id":13,
@@ -130,7 +154,9 @@
         "tags":[
             "outros"
         ],
-        "url": "./../data/data-flashes/flash_13.jpg"
+        "url": "./../data/data-flashes/flash_13.jpg",
+        "minsize": 4,
+        "collection": "Welcome 2022"
     },
     {
         "id":14,
@@ -140,6 +166,8 @@
         "tags":[
             "flores"
         ],
-        "url": "./../data/data-flashes/flash_14.jpg"
+        "url": "./../data/data-flashes/flash_14.jpg",
+        "minsize": 6,
+        "collection": "Welcome 2022"
     }
 ]

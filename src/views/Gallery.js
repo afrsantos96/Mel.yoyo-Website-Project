@@ -34,7 +34,7 @@ const GalleryContent = () => {
             <>
                 {gallery.map( (image,index) => {
                         return (
-                            <div key={index} className="gallery__img__container" > {/* col-6 col-md-4 */}
+                            <div key={index} className="gallery__img__container col-6 col-md-4" >
                                 <img src={image.url} alt="tattoo" className='gallery__img'  />
                                 <div className="gallery__img__overlay">
                                 <p className="gallery__img__overlay__txt">{image.title}</p>
@@ -53,12 +53,12 @@ const GalleryContent = () => {
 }
 
 const Gallery = () => (
-    <>
+    <><section className='gallery' >
+    <div className='gallery__container'>
     <div className='gallery__title' id='Gallery'>My work ~</div>
-    <div></div>
-    <section className='gallery' >
-        <div className='gallery__container'>{/* row */}
+        <div className='gallery__images__container row'>
             <GalleryContent/>
+        </div>
         </div>
     </section>
     </>

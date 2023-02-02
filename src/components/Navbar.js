@@ -25,7 +25,7 @@ const Navbar = () => (
                             <Link className='nav-link' to={"/shop"}>FLASHES</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link className='nav-link' to={"/custom"}>BOOKING</Link>
+                            <a className='nav-link' href="https://docs.google.com/forms/d/e/1FAIpQLSdj8bJKJULX7g35WAZgf2IepGM0ocmYdHU0dV4REGiBm-BFag/viewform" target="_blank" rel="noopener noreferrer">BOOKING</a>
                         </li>
                     </ul>
 
