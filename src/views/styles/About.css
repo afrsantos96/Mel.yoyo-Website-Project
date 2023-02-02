@@ -73,21 +73,16 @@
     .about__title{
         font-size: 2rem;
     }
-    .about__mel__txt{
-        font-size: 0.864rem;
-    }
+
     
 
 }
 
-
-@media (max-width: 576px){
-    .about{
-        padding: 1rem 2rem;
-    }
+@media (max-width: 767px){
     .about__container{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        max-width: 500px;
     }
     .about__img_container{
         grid-area: 1 / 1 / 2 / 2;
@@ -97,5 +92,17 @@
     .about__mel_txt-container{
         grid-area: 2 / 1 / 4 / 2;
         padding: 0 2rem;
-   }
+    }
+
+}
+
+
+@media (max-width: 576px){
+    .about{
+        padding: 1rem 2rem;
+    }
+    .about__mel__txt{
+        font-size: 0.864rem;
+    }
+
 }

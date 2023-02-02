@@ -1,0 +1,41 @@
+.notfound{
+    background-color: var(--color-palette2);
+    padding: 2rem 4rem;
+}
+.notfound__container{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: var(--maxviewdesktop);
+
+
+}
+
+.notfound__img__container{
+    display: flex;
+}
+.notfound__img{
+margin: auto;
+width: 300px;
+}
+
+@media (max-width: 767px){
+    .notfound__txt{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px){
+    .notfound{
+
+        padding: 2rem 2rem;
+    }
+
+    .notfound__txt{
+        font-size: 1.2rem;
+    }
+    .notfound__img{
+        width: 200px;
+    }
+}
