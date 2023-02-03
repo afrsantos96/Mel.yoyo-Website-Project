@@ -71,7 +71,7 @@ export default function ShopContent(props) {
       if (error) {
         return <p>Error: {error.message}</p>;
     } else if (!isLoaded) {
-        return <div className="loading"><div class="loadingio-spinner-spinner-wkemfo7naoe"><div class="ldio-o0viprjlto">
+        return <div className="loading"><div className="loadingio-spinner-spinner-wkemfo7naoe"><div className="ldio-o0viprjlto">
         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
         </div></div></div>;
     } else {
@@ -88,7 +88,7 @@ export default function ShopContent(props) {
             </section>
             <section className="shop">
                 <div className="row shop__container">
-                <button class="filter__button btn " type="button" data-bs-toggle="collapse" data-bs-target="#filters" aria-expanded="false" aria-controls="collapseWidthExample">
+                <button className="filter__button btn " type="button" data-bs-toggle="collapse" data-bs-target="#filters" aria-expanded="false" aria-controls="collapseWidthExample">
                         Filters
                         </button>
                     <div className="shop__filter col-12 col-lg-2 collapse" id="filters"> 
@@ -149,7 +149,7 @@ export default function ShopContent(props) {
                                     <div key={flash.id} className="flash__img__container col-6 col-md-4">
                                         {/**Tattoo Gallery with Link to each Flash */}
                                         <Link className='nav-link' to={`/shop/${flash.id}`}>
-                                            <img src={flash.url} alt="tattoo" className='flash__img'/>
+                                            <img src={flash.url} alt="available tattoo" className='flash__img'/>
                                             <div className="flash__img__overlay">
                                                 <p className="flash__img__overlay__txt__title">{flash.title}</p>
                                                 <p className="flash__img__overlay__txt__price">{flash.price}€</p>

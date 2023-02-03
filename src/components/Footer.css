@@ -1,6 +1,5 @@
 .footer{
     padding: 1rem 4rem;
-    
     background-color: var(--color-palette4);
     height:4em;
     color: var(--color-palette1);
@@ -37,6 +36,8 @@ padding-right: 1rem;
 .social__link:is(:hover, :focus){
     color: var(--color-palette3)
 }
+
+/* ------------------------  Media Queries ------------------------*/
 
 @media (max-width: 800px){
     .footer{

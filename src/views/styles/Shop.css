@@ -173,6 +173,7 @@
     transform: rotate(45deg);
   }
   
+  /* ------------------------  Media Queries ------------------------*/
 
  @media(min-width:992px) {
     .shop__filter{

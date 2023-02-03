@@ -35,7 +35,7 @@ const GalleryContent = () => {
                 {gallery.map( (image,index) => {
                         return (
                             <div key={index} className="gallery__img__container col-6 col-md-4" >
-                                <img src={image.url} alt="tattoo" className='gallery__img'  />
+                                <img src={image.url} alt="fresh tattoo" className='gallery__img'  />
                                 <div className="gallery__img__overlay">
                                 <p className="gallery__img__overlay__txt">{image.title}</p>
                                 </div>

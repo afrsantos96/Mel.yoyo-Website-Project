@@ -78,6 +78,9 @@
 
 }
 
+/* ------------------------  Media Queries ------------------------*/
+
+
 @media (max-width: 767px){
     .about__container{
         grid-template-columns: repeat(1, 1fr);

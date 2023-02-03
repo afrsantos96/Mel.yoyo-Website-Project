@@ -53,6 +53,9 @@ padding: 2rem 4rem;
 }
 
 
+/* ------------------------  Media Queries ------------------------*/
+
+
 @media (max-width: 576px){
   .flash{
     padding:2rem 2rem;
@@ -62,6 +65,8 @@ padding: 2rem 4rem;
   }
   }
 
+
+  
 /* Loading */
 
 .loading{

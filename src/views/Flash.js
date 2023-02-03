@@ -34,7 +34,7 @@ export default function Flash() {
         return <p>Error: {error.message}</p>;
     } else if (!isLoaded) {
         
-        return <div className='loading'><div class="loadingio-spinner-spinner-wkemfo7naoe"><div class="ldio-o0viprjlto loading">
+        return <div className='loading'><div className="loadingio-spinner-spinner-wkemfo7naoe"><div className="ldio-o0viprjlto loading">
         <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
         </div></div></div>
     } else {
@@ -44,7 +44,7 @@ export default function Flash() {
                 <div className='flash'>
                     <div className="flash__header">
                         <div className="flash__header__container">
-                            <Link className='back__link nav-link' to={"/shop"}><i class="fa-solid fa-angle-left"></i> Back to Gallery</Link>
+                            <Link className='back__link nav-link' to={"/shop"}><i className="fa-solid fa-angle-left"></i> Back to Gallery</Link>
                             <p className="flash__title">{flashes[flash-1].title}</p>
                             <p className="flash__subtitle">{flashes[flash-1].collection}</p>
                             <p className="flash__subtitle">Min Size: {flashes[flash-1].minsize} cm</p>

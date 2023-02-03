@@ -5,7 +5,7 @@
         "price":100,
         "size":"medium",
         "tags":[
-            "coraçoes"
+            "corações"
         ],
         "url": "./../data/data-flashes/flash_1.jpg",
         "minsize": 6,
@@ -79,7 +79,7 @@
         "price":100,
         "size":"medium",
         "tags":[
-            "coraçoes"
+            "corações"
         ],
         "url": "./../data/data-flashes/flash_7.jpg",
         "minsize": 6,
@@ -140,7 +140,7 @@
         "price":80,
         "size":"small",
         "tags":[
-            "coraçoes"
+            "corações"
         ],
         "url": "./../data/data-flashes/flash_12.jpg",
         "minsize": 5,
